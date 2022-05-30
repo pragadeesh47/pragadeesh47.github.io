@@ -42,7 +42,7 @@ let month = futureDate.getMonth();
 month = months[month];
 const weekday = weekdays[futureDate.getDay()];
 const date = futureDate.getDate();
-giveaway.textContent = `Events Starts on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}0 am`;
+giveaway.textContent = `Event on ${weekday}, ${date}th ${month} ${year} ${hours}:${minutes}0 am`;
 
 const futureTime = futureDate.getTime();
 function getRemaindingTime() {
