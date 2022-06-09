@@ -22,6 +22,10 @@
     display: flex;
     justify-content: space-around;
 }
+.fee{
+    text-align: center;
+   
+}
 
 .nav-content{
     display: flex;
