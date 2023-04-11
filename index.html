@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+
+<style>
+    *{
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+    }
+    .hello-content, .nav-content{
+        padding: 20px;
+    }
+    .nav{
+        font-weight: bold;
+        background: transparent;
+    }
+    .header-container .hello-content p {
+        padding: 10px;
+        background-color: #0049B7;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+    
+@media screen and (min-width:800px) {
+    .nav-toggle {
+    display: none;
+  }
+  .nav{
+    width: 100%;
+
+  }
+
+  .header-container nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+  
+    .header-container ul li a{
+        text-decoration: none;
+        padding: 10px;
+
+    }
+    .header-container ul li {
+        display: inline;
+    }
+    
+}
+    
+
+    .home-container, .project-container, .contact-container{
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .home-container{
+        text-align: center;
+        height: 70vh;
+    }
+    .stack-images img{
+        width: 25px;
+        margin: 10px;
+    }
+    .profile-content-2{
+        display: flex;
+        align-items: center;
+    }
+    .hc-one{
+        text-align: left;
+    }
+
+    .hc-one p{
+        margin: 10px;
+        font-size: large;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .profile-content-1 button{
+        margin: 10px;
+        padding: 7px 14px;        
+        background-color: #0049B7;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+    }
+    .name-content{
+        font-size: 1.5rem;
+        color: #0049B7;
+    }
+    .hc-two img{
+        width: 50%;
+    }
+    .about-container{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;   
+    }
+    .container-title{
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: bolder;
+        color: #0049B7;
+    }
+    .about-content{
+        width: 50%;
+        line-height: 1.5rem;
+        text-indent: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project-content{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .project-content .project{
+        width: 30%;
+        margin:10px;
+        transition: transform 0.5s ease-in-out;
+
+        
+
+    }
+    .project-content .project:hover{
+        transform: scale(110%);
+        transition: transform 0.5s ease-in-out;
+        margin: 8px;
+        border:2px solid #0049B7;
+        
+    }
+ 
+    .project img{
+        width: 100%;
+       
+    }
+   
+    .project-content .project div{
+        text-align: center;
+        background-color: #0049B7;
+        padding: 10px;
+        color: #FFFFFF;
+    }
+    .contact-content input{
+        padding: 10px 18px;
+        margin: 10px;
+        width: 100%;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+    }
+    .contact-content{
+        margin: 10px;
+
+    }
+
+.color{
+    color: #FFFFFF;
+}
+.color-blk{
+    color: black;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0049B7;
+
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+.contact-details p span, .contact-details p{
+    margin: 10px;
+    text-align: left;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    width: 35px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    .home-container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header-container{
+        background: #0049B7;
+    }
+    .about-container{
+        height: 100vh;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .project-content{
+        flex-direction: row;
+        overflow-y: auto;
+        height: 60vh;
+    }
+    .project-content .project{
+        width: 100%;
+    }
+   
+    .nav-content{
+        padding: 0;
+        transition: height 0.5s;
+    }
+    .nav-content ul li{
+        list-style: none;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .nav-content ul li a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .nav-content{
+        height: 0;
+        overflow: hidden;
+    }
+.nav{
+    width: 100%;
+}
+   
+}
+
+
+.hello-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.toggle{
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+    
+}
+.un-toggle{
+    transform: rotate(-360deg);
+    transition: transform 0.5s;
+    
+}
+</style>
+<body>
+    <section class="main-container">
+        <section class="header-container">
+            <header class="header-tag">
+                <nav class="nav">
+                    <div class="hello-content">
+                        <p>Hey Everyone</p>
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                          </button>
+                    </div>
+                    <div class="nav-content">
+                        <ul class="links">
+                            <li>
+                                <a class="link" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#about">About</a>
+                            </li><li>
+                                <a class="link" href="#project">Projects</a>
+                            </li><li>
+                                <a class="link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <section class="body-container">
+        <div id="home" class="home-container">
+            <div class="home-content hc-one">
+                <div class="profile-content-1">
+                <p>Hi I'm <span class="name-content"> Pragadeeshwaran </span></p>
+                <p>Web Developer</p>
+                <button class="know-btn">Know more</button>
+            </div>
+<div class="profile-content-2">
+    <p>Tech Stack</p>
+    <div class="stack-images">
+<img src="assets/html-5.png" alt="">
+<img src="assets/css-3.png" alt="">
+<img src="assets/js.png" alt="">
+<img src="assets/php.png" alt="">
+<img src="assets/sql.png" alt="">
+<img src="assets/python.png" alt="">
+
+    </div>
+    </p>
+</div>    
+            </div>
+            <div class="home-content hc-two">
+                <img src="profile.png" alt="">
+            </div>
+        </div>
+        <div id="about" class="about-container">
+<p class="container-title">About</p>
+<div class="about-content">
+    <img src="./assets/aboutimg.webp" alt="">
+    <p>Looking for a challenging role in a reputable organization to utilize my technical and
+        management skills for the growth of the organization as well as to enhance my
+        contact knowledge about new and emerging trends in the IT sector</p>
+</div>
+        </div>
+        <div id="project" class="project-container">
+<p class="container-title">Projects</p>
+<div class="project-content">
+    <div class="project">
+        <img src="assets/cal.png" alt="">
+        <div>
+        <h3>Calculator</h3>
+        </div>
+    </div>
+    <div class="project">
+        <img src="assets/bank.png" alt="">
+        <div>
+            <h3>Basic Banking System</h3>
+            </div>
+    </div>   <div class="project">
+        <img src="assets/event.png" alt="">
+        <div>
+            <h3>Landing Page</h3>
+            </div>
+    </div>   <div class="project">
+        <img src="assets/dice.png" alt="">
+        <div>
+            <h3>Dice Game</h3>
+            </div>
+    </div>   <div class="project">
+        <img src="assets/peta.png" alt="">
+        <div>
+            <h3>Personal Expense Tracker</h3>
+            </div>
+    </div>
+    <div class="project">
+        <img src="assets/pos.png" alt="">
+        <div>
+            <h3>Point of Sale</h3>
+            </div>
+    </div>
+</div>
+        </div>
+        <div id="contact" class="contact-container">
+<p class="container-title">Contact</p>
+<div class="contact-content">
+    <div class="contact-details">
+    <p><span><i class="fas fa-user"></i></span>Pragadeeshwaran</p>
+    <p><span><i class="fas fa-envelope"></i></span>pragadeesh4701@gmail.com</p>
+    <p><span><i class="fas fa-phone"></i></span>9150209025</p>
+    <p><span><i class="fas fa-graduation-cap"></i></span>BE- Computer Science and Engineering</p>
+</div>
+<div class="social-media">
+    <div class="social">
+        <a href="https://www.linkedin.com/in/pragadeeshwaran-developer/" target="_blank"><img src="assets/ln.png" alt=""></a>
+    </div>
+    <div class="social">
+       <a href="https://www.instagram.com/pragadeesh._/" target="_blank"> <img src="assets/ig.svg" alt=""></a>
+    </div> <div class="social">
+        <a href="https://twitter.com/engineer_471" target="_blank"><img src="assets/tr.png" alt=""></a>
+    </div> <div class="social">
+        <a href="https://www.facebook.com/pragadeesh.pragadeesh.7169709" target="_blank"><img src="assets/fb.png" alt=""></a>
+    </div> <div class="social">
+        <a href="https://github.com/pragadeesh47/" target="_blank"><img src="assets/gh.png" alt=""></a>
+    </div>
+</div>
+</div>
+        </div>
+    </section>
+    </section>
+
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    <script>
+
+        document.querySelector(".know-btn").addEventListener("click", function(){
+            alert("First Know Yourself... than myself");
+        })
+
+   
+const navbar = document.querySelector(".nav");
+const topLink = document.querySelector(".top-link");
+const links = document.querySelectorAll(".link");
+links.forEach(link =>{
+    link.classList.remove("color")
+        link.classList.add("color-blk")
+
+    })
+window.addEventListener("scroll", function () {
+  const scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
+  if (scrollHeight > navHeight) {
+    navbar.classList.add("fixed-nav");
+    links.forEach(link =>{
+    link.classList.remove("color-blk")
+        link.classList.add("color")
+    })
+
+  } else {
+    navbar.classList.remove("fixed-nav");
+    links.forEach(link =>{
+    link.classList.remove("color")
+        link.classList.add("color-blk")
+
+    })
+
+  }
+
+//   setup back to top link
+
+  if (scrollHeight > 500) {
+    console.log("helo");
+
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
+});
+
+// ********** smooth scroll ************
+// select links
+const scrollLinks = document.querySelectorAll(".link");
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // prevent default
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    const navHeight = navbar.getBoundingClientRect().height;
+    // const containerHeight = linksContainer.getBoundingClientRect().height;
+var cll = document.querySelector(".links").getBoundingClientRect().height;
+
+    const fixedNav = navbar.classList.contains("fixed-nav");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) {
+      position = position - navHeight;
+    }
+    if (navHeight > 82) {
+      position = position + cll;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    // close
+    document.querySelector(".nav-content").style.height=0;
+    
+
+  });
+});
+
+document.querySelector(".nav-toggle").onclick = () =>{
+    var cl = document.querySelector(".nav-content").getBoundingClientRect().height;
+var cll = document.querySelector(".links").getBoundingClientRect().height;
+    if(cl===0){
+        document.querySelector(".nav-content").style.height = cll+"px";
+        document.querySelector(".nav-toggle").classList.remove("un-toggle");
+        document.querySelector(".nav-toggle").classList.add("toggle");
+
+
+    } 
+    else{
+        document.querySelector(".nav-content").style.height = 0;
+        document.querySelector(".nav-toggle").classList.remove("toggle");
+        document.querySelector(".nav-toggle").classList.add("un-toggle");
+
+
+    }
+}
+</script>
+</body>
+</html>
