@@ -534,7 +534,16 @@ var cll = document.querySelector(".links").getBoundingClientRect().height;
     });
     // close
     document.querySelector(".nav-content").classList.remove("height");
-    
+    var cont = document.querySelector(".nav-toggle").classList.contains("toggle");
+    if(cont){
+        document.querySelector(".nav-toggle").classList.remove("toggle");
+        document.querySelector(".nav-toggle").classList.add("un-toggle");
+    }else{
+        document.querySelector(".nav-toggle").classList.remove("un-toggle");
+        document.querySelector(".nav-toggle").classList.add("toggle");
+    }
+   
+    // document.querySelector(".nav-toggle").classList.add("un-toggle");
 
   });
 });
