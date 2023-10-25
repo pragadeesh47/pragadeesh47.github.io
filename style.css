@@ -434,6 +434,6 @@ body{
   left: 0;
 }
 .projects .project-container .project-content{
-  height: 60vh;
+  height: 100%;
 }
 }
