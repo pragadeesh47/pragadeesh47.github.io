@@ -1,25 +1,25 @@
-let lastScrollTop = 0;
-const header = document.querySelector('.header');
-window.addEventListener("scroll", function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+// let lastScrollTop = 0;
+// const header = document.querySelector('.header');
+// window.addEventListener("scroll", function() {
+//   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScroll > lastScrollTop) {
-    // Scrolling down
-    console.log("Scrolling down");
-    if(header.classList.contains('fixed-nav')){
-        header.classList.remove('fixed-nav')
-    }
-  } else {
-    // Scrolling up
-    console.log("Scrolling up");
+//   if (currentScroll > lastScrollTop) {
+//     // Scrolling down
+//     console.log("Scrolling down");
+//     if(header.classList.contains('fixed-nav')){
+//         header.classList.remove('fixed-nav')
+//     }
+//   } else {
+//     // Scrolling up
+//     console.log("Scrolling up");
   
-    if(!header.classList.contains('fixed-nav')){
-        header.classList.add('fixed-nav')
-    }
-  }
+//     if(!header.classList.contains('fixed-nav')){
+//         header.classList.add('fixed-nav')
+//     }
+//   }
   
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+//   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+// });
 
 
 
