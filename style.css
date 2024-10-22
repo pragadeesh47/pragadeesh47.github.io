@@ -93,12 +93,9 @@ header nav ul li{
 
 /* ABOUT SECTION */
 .about-section div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   text-align: center;
     height: 100vh;
     width : 60%;
-    background-color: #213555;
 }
 .about-section div{
    /* width: 40%; */
