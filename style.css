@@ -93,24 +93,24 @@ header nav ul li{
 
 /* ABOUT SECTION */
 .about-section{
-    display: flex;
-    /* flex-direction: column; */
+    /* display: flex;
+    flex-direction: column; 
     align-items: center;
-    justify-content: end;
+    justify-content: end; */
     height: 100vh;
 }
 .about-section div{
-    width: 40%;
+   /* width: 40%; */
     padding: 10px;
 }
 
-.about-section div:nth-child(2) img{
+/* .about-section div:nth-child(2) img{
     width: 50%;
     height: auto;
-    /* border: 5px solid #213555; */
+    border: 5px solid #213555; 
     box-shadow: 0 0 8px 2px #213555;
 
-}
+} */
 
 
 .about-section .skills-img{
