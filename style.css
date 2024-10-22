@@ -97,6 +97,7 @@ header nav ul li{
     flex-direction: column; 
     align-items: center;
     justify-content: end; */
+    text-align: center;
     height: 100vh;
 }
 .about-section div{
