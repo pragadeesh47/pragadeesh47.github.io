@@ -94,6 +94,7 @@ header nav ul li{
 /* ABOUT SECTION */
 .about-section{
     text-align: center;
+    margin: auto;
     height: 100vh;
     width : 60%;
 }
