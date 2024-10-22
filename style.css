@@ -92,7 +92,7 @@ header nav ul li{
 
 
 /* ABOUT SECTION */
-.about-section{
+.about-section div{
     display: flex;
     align-items: center;
     justify-content: center;
