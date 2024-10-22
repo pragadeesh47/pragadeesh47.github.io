@@ -93,12 +93,11 @@ header nav ul li{
 
 /* ABOUT SECTION */
 .about-section{
-    /* display: flex;
-    flex-direction: column; 
+    display: flex;
     align-items: center;
-    justify-content: end; */
-    text-align: center;
+    justify-content: center;
     height: 100vh;
+    width : 60%;
 }
 .about-section div{
    /* width: 40%; */
