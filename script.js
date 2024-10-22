@@ -22,7 +22,7 @@
 // });
 
 
-
+/*
 const navItems = document.querySelectorAll('.nav-item')
 const headerHeight = header.offsetHeight
 navItems.forEach(navItem=>{
@@ -52,3 +52,4 @@ function getGreeting() {
 
 const greeting = document.getElementById('greeting');
 greeting.textContent = getGreeting()
+*/
