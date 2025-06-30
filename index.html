@@ -1,0 +1,338 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .disabled-link {
+            pointer-events: none;
+        }
+
+        .deploy-tooltip {
+
+            display: inline;
+            width: 12px;
+        }
+        .header-container{
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#121416] dark group/design-root overflow-x-hidden"
+        style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class=" flex items-center justify-center sm:justify-between whitespace-nowrap border-b border-solid border-b-[#2c3035] px-10 py-3">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-4">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">TechFolio</h2>
+                </div>
+                <div class="hidden sm:flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-white text-sm font-medium leading-normal" href="#about">About</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="#projects">Projects</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="#skills">Skils</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="#contact">Contact</a>
+                    </div>
+                    <div>
+                        <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            style="object-fit: contain;background-color: bisque;" src="dp.png" alt="">
+                    </div>
+                </div>
+            </header>
+           <main>
+             <div class="sm:px-40 flex flex-1 justify-center py-5" >
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex p-4 @container">
+                        <div class="flex w-full flex-col gap-4 items-center">
+                            <div class="flex gap-4 flex-col items-center">
+                                <div>
+                                    <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                                        style="object-fit: contain;background-color: bisque;" src="dp.png" alt="">
+                                </div>
+                                <div class="flex flex-col items-center justify-center justify-center">
+                                    <p
+                                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+                                        Pragadeeshwaran</p>
+                                    <p class="text-[#a2abb3] text-base font-normal leading-normal text-center">Software
+                                        Developer</p>
+                                    <p class="text-[#a2abb3] text-base font-normal leading-normal text-center">
+                                        TamilNadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="about" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About
+                        Me</h2>
+                    <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+                        I am a passionate software developer with over 2 years of experience in building scalable and
+                        efficient web applications. My expertise lies in full-stack development,
+                        with a strong focus on front-end technologies such as React and Angular, and back-end frameworks
+                        like .Net and NodeJs. I am dedicated to creating innovative
+                        solutions and continuously learning new technologies to stay at the forefront of the industry.
+                    </p>
+
+                    <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        id="skills">Skills</h2>
+                    <div class="flex gap-3 p-3 flex-wrap pr-4">
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">React</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">Angular</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">NodeJs</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">.Net</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">JavaScript</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">TypeScript</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">HTML</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">CSS</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">SQL</p>
+                        </div>
+                        <div
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                            <p class="text-white text-sm font-medium leading-normal">Git</p>
+                        </div>
+                    </div>
+                    <h2 id="projects" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Key
+                        Projects</h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                        <a href="https://blogs.cappriciosec.com/" target="_blank">
+                            <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
+                                <div>
+
+                                    <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                        style="object-fit: cover;" src="./blog.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="text-white text-base font-medium leading-normal">Blogging <span><img
+                                                class="deploy-tooltip" src="./tick.png" alt=""></span></p>
+                                    <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                                        This blog platform allows readers to view, search, and subscribe to posts.
+                                        Admins can create, edit, and delete content through a secure dashboard.
+                                        Built using React, PHP, and MySQL. </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://walkinhub.vercel.app/" target="_blank">
+                            <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
+                                <div>
+
+                                    <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                        style="object-fit: cover;" src="./walkinhub.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="text-white text-base font-medium leading-normal">WalkinHub <span><img
+                                                class="deploy-tooltip" src="./tick.png" alt=""></span></p>
+                                    <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                                        View and share walk-in job opportunities easily.
+                                        Job seekers get listings; users can contribute drives.
+                                        Built with React, using Firebase or Supabase for backend services.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://raw.githack.com/pragadeesh47/linkedin-ui-clone/refs/heads/main/index.html"
+                            target="_blank">
+                            <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
+                                <div>
+                                    <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                        style="object-fit: cover;" src="./linkedin-ui-clone.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="text-white text-base font-medium leading-normal">LinkedIn UI Clone <span>
+                                            <img class="deploy-tooltip" src="./tick.png" alt="">
+                                        </span></p>
+                                    <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                                        Built a LinkedIn-inspired interface for desktop screens.
+                                        Created with HTML and CSS, without any interactivity.
+                                        Focused on layout accuracy and clean design. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-3 p-4">
+                        <a href="" class="disabled-link" style="cursor: pointer;">
+                            <div class="flex flex-col gap-3 pb-3 " style="cursor: pointer;">
+                                <div>
+                                    <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                        style="object-fit: cover;" src="./e-learning.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="text-white text-base font-medium leading-normal">E Learning <span> <img
+                                                class="deploy-tooltip" src="./close.png" alt="">
+                                        </span></p>
+                                    <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                                        Complete E-Learning app with admin, trainer, and customer modules.
+                                        Customers can browse courses, make payments, and enroll; trainers manage course
+                                        content.
+                                        Built using React, PHP, and MySQL for a robust learning system.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="disabled-link" style="cursor: pointer;">
+                            <div class="flex flex-col gap-2 pb-3 " style="cursor: pointer;">
+                                <div>
+                                    <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                        style="object-fit: cover;" src="./pos.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="text-white text-base font-medium leading-normal">Shop Management System
+                                        <span> <img class="deploy-tooltip" src="./close.png" alt="">
+                                        </span>
+                                    </p>
+                                    <p class="text-[#a2abb3] text-sm font-normal leading-normal">
+                                        Developed a web-based solution for managing mobile shop activities.
+                                        Supports inventory tracking, customer records, recharge history, credits,
+                                        orders, and expenses.
+                                        Tech stack: HTML, CSS, JavaScript, AJAX, jQuery, PHP, and MySQL.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience</h2>
+            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+              <div class="flex flex-col items-center gap-1 pt-3">
+                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="w-[1.5px] bg-[#40474f] h-2 grow"></div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Senior Software Developer at Innovate Solutions</p>
+                <p class="text-[#a2abb3] text-base font-normal leading-normal">2018 - Present</p>
+              </div>
+              <div class="flex flex-col items-center gap-1 pb-3">
+                <div class="w-[1.5px] bg-[#40474f] h-2"></div>
+                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Junior Software Developer at TechStart</p>
+                <p class="text-[#a2abb3] text-base font-normal leading-normal">2016 - 2018</p>
+              </div>
+            </div> -->
+
+                    <h2 id="contact" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Social
+                        Media</h2>
+                    <div class="@container">
+                        <div class="gap-2 px-4 flex flex-wrap justify-start">
+                            <a href="https://www.linkedin.com/in/pragadeeshwaran-developer" target="_blank">
+                                <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                    <div class="rounded-full bg-[#2c3035] p-2.5">
+                                        <div class="text-white" data-icon="LinkedinLogo" data-size="20px"
+                                            data-weight="regular">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                fill="currentColor" viewBox="0 0 256 256">
+                                                <path
+                                                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="text-white text-sm font-medium leading-normal">LinkedIn</p>
+                                </div>
+                            </a>
+                            <a href="https://x.com/pragadeesh471" target="_blank">
+                                <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                    <div class="rounded-full bg-[#2c3035] p-2.5">
+                                        <div class="text-white" data-icon="TwitterLogo" data-size="20px"
+                                            data-weight="regular">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                fill="currentColor" viewBox="0 0 256 256">
+                                                <path
+                                                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="text-white text-sm font-medium leading-normal">Twitter</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/pragadeesh47" target="_blank">
+                                <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                    <div class="rounded-full bg-[#2c3035] p-2.5">
+                                        <div class="text-white" data-icon="GithubLogo" data-size="20px"
+                                            data-weight="regular">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                fill="currentColor" viewBox="0 0 256 256">
+                                                <path
+                                                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="text-white text-sm font-medium leading-normal">GitHub</p>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/pragadeesh._" target="_blank">
+                                <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                    <div class="rounded-full bg-[#2c3035] p-2.5">
+                                        <div class="text-white" data-icon="InstagramLogo" data-size="20px" data-weight="regular">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                                <path d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152Zm40-88a8,8,0,1,1-8-8A8,8,0,0,1,168,64Zm56-8V200a48.05,48.05,0,0,1-48,48H80a48.05,48.05,0,0,1-48-48V56A48.05,48.05,0,0,1,80,8h96A48.05,48.05,0,0,1,224,56Zm-16,0a32,32,0,0,0-32-32H80A32,32,0,0,0,48,56V200a32,32,0,0,0,32,32h96a32,32,0,0,0,32-32Z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="text-white text-sm font-medium leading-normal">Instagram</p>
+                                </div>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </main>
+           <footer class="bg-[#121416] text-center py-4 text-white">Code. Create. Innovate.</footer>
+        </div>
+    </div>
+</body>
+
+</html>
