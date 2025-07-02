@@ -8,7 +8,13 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./*.html"],
+        }
+    </script>
     <style>
         .disabled-link {
             pointer-events: none;
