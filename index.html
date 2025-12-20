@@ -89,10 +89,10 @@
                             About
                             Me</h2>
                         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-                            Full Stack Software Engineer with 2 years of professional experience delivering end-to-end 
-                            web applications in Agile environments. Proven experience across the full software 
-                            development lifecycle, including requirement analysis, development, testing, and 
-                            maintenance. Strong emphasis on clean, maintainable code, accessibility best practices, 
+                            Full Stack Software Engineer with 2 years of professional experience delivering end-to-end
+                            web applications in Agile environments. Proven experience across the full software
+                            development lifecycle, including requirement analysis, development, testing, and
+                            maintenance. Strong emphasis on clean, maintainable code, accessibility best practices,
                             and application reliability. Primary experience across Angular, React, and .NET Core
                             based application development.
                         </p>
@@ -117,9 +117,9 @@
                                 <p class="text-white text-sm font-medium leading-normal">NodeJs</p>
                             </div>
                             <div
-                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                            <p class="text-white text-sm font-medium leading-normal">GraphQL</p>
-                        </div>
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
+                                <p class="text-white text-sm font-medium leading-normal">GraphQL</p>
+                            </div>
                             <div
                                 class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
                                 <p class="text-white text-sm font-medium leading-normal">JavaScript</p>
@@ -185,8 +185,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://raw.githack.com/pragadeesh47/linkedin-ui-clone/refs/heads/main/index.html" id="linkedin-ui-link"
-                                target="_blank">
+                            <a href="https://raw.githack.com/pragadeesh47/linkedin-ui-clone/refs/heads/main/index.html"
+                                id="linkedin-ui-link" target="_blank">
                                 <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
                                     <div>
                                         <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
@@ -196,7 +196,8 @@
                                         <p class="text-white text-base font-medium leading-normal">LinkedIn UI Clone
                                             <span>
                                                 <img class="deploy-tooltip" id="linkedin-ui" src="./tick.png" alt="">
-                                            </span></p>
+                                            </span>
+                                        </p>
                                         <p class="text-[#a2abb3] text-sm font-normal leading-normal">
                                             Built a LinkedIn-inspired interface for desktop screens.
                                             Created with HTML and CSS, without any interactivity.
@@ -351,6 +352,38 @@
                                         <p class="text-white text-sm font-medium leading-normal">Instagram</p>
                                     </div>
                                 </a>
+                                <a href="mailto:pragadeeshwaran471@gmail.com" target="_blank">
+                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                        <div class="rounded-full bg-[#2c3035] p-2.5">
+                                            <div class="text-white" data-icon="InstagramLogo" data-size="20px"
+                                                data-weight="regular">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                    fill="currentColor" viewBox="0 0 256 256">
+                                                    <path
+                                                        d="M224,56V200a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V56a16,16,0,0,1,16-16H208A16,16,0,0,1,224,56Zm-32,0H64l64,48Zm16,16-64,48a16,16,0,0,1-19.2,0L48,72V200H208Z" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="text-white text-sm font-medium leading-normal">Mail</p>
+                                    </div>
+                                </a>
+                                <a href="tel:+919150209025" target="_blank">
+                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
+                                        <div class="rounded-full bg-[#2c3035] p-2.5">
+                                            <div class="text-white" data-icon="InstagramLogo" data-size="20px"
+                                                data-weight="regular">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                                    fill="currentColor" viewBox="0 0 256 256">
+                                                    <path
+                                                        d="M222.37,158.46l-48-24a16,16,0,0,0-17.23,2.89l-21.41,21.41A176.19,176.19,0,0,1,97.23,120.27l21.41-21.41a16,16,0,0,0,2.89-17.23l-24-48A16,16,0,0,0,80,24H48A16,16,0,0,0,32,40C32,149.93,106.07,224,216,224a16,16,0,0,0,16-16V176A16,16,0,0,0,222.37,158.46Z" />
+                                                </svg>
+
+                                            </div>
+                                        </div>
+                                        <p class="text-white text-sm font-medium leading-normal">Phone</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -368,12 +401,12 @@
             const screenWidth = window.innerWidth;
             if (screenWidth >= 1024) {
                 img.src = './tick.png';
-                if(linkedinLink.classList.contains("disabled-link")){
+                if (linkedinLink.classList.contains("disabled-link")) {
                     linkedinLink.classList.remove("disabled-link");
                 }
             } else {
                 img.src = './close.png';
-                if(!linkedinLink.classList.contains("disabled-link")){
+                if (!linkedinLink.classList.contains("disabled-link")) {
                     linkedinLink.classList.add("disabled-link");
                 }
             }
