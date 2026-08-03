@@ -1,417 +1,1308 @@
-<html>
-
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
-
-    <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            content: ["./*.html"],
-        }
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pragadeeshwaran V — Full Stack Developer (.NET Core & Angular)</title>
+    <meta
+      name="description"
+      content="Full Stack Developer with 3+ years building enterprise SaaS with ASP.NET Core, C#, Angular, SQL Server and Azure for Siemens/Brightly and HealthStream. Open to roles worldwide."
+    />
+    <meta name="author" content="Pragadeeshwaran V" />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, .NET Core Developer, Angular Developer, ASP.NET Core, C#, SQL Server, Azure, Microservices, Chennai"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Pragadeeshwaran V — Full Stack Developer (.NET Core & Angular)" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer with 3+ years building enterprise SaaS with ASP.NET Core, C#, Angular, SQL Server and Azure for Siemens/Brightly and HealthStream. Open to roles worldwide."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pragadeeshwaran V — Full Stack Developer (.NET Core & Angular)" />
+    <meta
+      name="twitter:description"
+      content="Full Stack Developer with 3+ years building enterprise SaaS with ASP.NET Core, C#, Angular, SQL Server and Azure for Siemens/Brightly and HealthStream. Open to roles worldwide."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"Pragadeeshwaran V","jobTitle":"Full Stack Developer",
+      "email":"mailto:pragadeeshwaran471@gmail.com","telephone":"+91-91502-09025",
+      "address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","addressCountry":"IN"},
+      "sameAs":["https://linkedin.com/in/pragadeeshwaran-developer","https://github.com/pragadeesh47"],
+      "knowsAbout":["ASP.NET Core","C#","Angular","SQL Server","Microservices","Azure","REST API","GraphQL"]}
     </script>
-    <style>
-        .disabled-link {
-            pointer-events: none;
-        }
-
-        .deploy-tooltip {
-
-            display: inline;
-            width: 12px;
-        }
-
-        .header-container {
-            position: sticky;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#121416] dark group/design-root overflow-x-hidden"
-        style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-        <div class="layout-container flex h-full grow flex-col">
-            <header
-                class=" flex items-center justify-center sm:justify-between whitespace-nowrap border-b border-solid border-b-[#2c3035] px-10 py-3">
-                <div class="flex items-center gap-4 text-white">
-                    <div class="size-4">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">TechFolio</h2>
-                </div>
-                <div class="hidden sm:flex flex-1 justify-end gap-8">
-                    <div class="flex items-center gap-9">
-                        <a class="text-white text-sm font-medium leading-normal" href="#about">About</a>
-                        <a class="text-white text-sm font-medium leading-normal" href="#projects">Projects</a>
-                        <a class="text-white text-sm font-medium leading-normal" href="#skills">Skils</a>
-                        <a class="text-white text-sm font-medium leading-normal" href="#contact">Contact</a>
-                    </div>
-                    <div>
-                        <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-                            style="object-fit: contain;background-color: bisque;" src="dp.png" alt="">
-                    </div>
-                </div>
-            </header>
-            <main>
-                <div class="sm:px-40 flex flex-1 justify-center py-5">
-                    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-                        <div class="flex p-4 @container">
-                            <div class="flex w-full flex-col gap-4 items-center">
-                                <div class="flex gap-4 flex-col items-center">
-                                    <div>
-                                        <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                                            style="object-fit: contain;background-color: bisque;" src="dp.png" alt="">
-                                    </div>
-                                    <div class="flex flex-col items-center justify-center justify-center">
-                                        <p
-                                            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
-                                            Pragadeeshwaran</p>
-                                        <p class="text-[#a2abb3] text-base font-normal leading-normal text-center">
-                                            Software
-                                            Engineer</p>
-                                        <p class="text-[#a2abb3] text-base font-normal leading-normal text-center">
-                                            TamilNadu, India</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 id="about"
-                            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                            About
-                            Me</h2>
-                        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-                            Full Stack Software Engineer with 2 years of professional experience delivering end-to-end
-                            web applications in Agile environments. Proven experience across the full software
-                            development lifecycle, including requirement analysis, development, testing, and
-                            maintenance. Strong emphasis on clean, maintainable code, accessibility best practices,
-                            and application reliability. Primary experience across Angular, React, and .NET Core
-                            based application development.
-                        </p>
-
-                        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
-                            id="skills">Skills</h2>
-                        <div class="flex gap-3 p-3 flex-wrap pr-4">
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">React</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">Angular</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">.NET Core</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">NodeJs</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">GraphQL</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">JavaScript</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">TypeScript</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">HTML</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">CSS</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">SQL</p>
-                            </div>
-                            <div
-                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#2c3035] pl-4 pr-4">
-                                <p class="text-white text-sm font-medium leading-normal">Git</p>
-                            </div>
-                        </div>
-                        <h2 id="projects"
-                            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                            Key
-                            Projects</h2>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                            <a href="https://blogs.cappriciosec.com/" target="_blank">
-                                <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
-                                    <div>
-
-                                        <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                                            style="object-fit: cover;" src="./blog.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <p class="text-white text-base font-medium leading-normal">Blogging <span><img
-                                                    class="deploy-tooltip" src="./tick.png" alt=""></span></p>
-                                        <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                                            This blog platform allows readers to view, search, and subscribe to posts.
-                                            Admins can create, edit, and delete content through a secure dashboard.
-                                            Built using React, PHP, and MySQL. </p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="https://walkinhub.vercel.app/" target="_blank">
-                                <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
-                                    <div>
-
-                                        <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                                            style="object-fit: cover;" src="./walkinhub.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <p class="text-white text-base font-medium leading-normal">WalkinHub <span><img
-                                                    class="deploy-tooltip" src="./tick.png" alt=""></span></p>
-                                        <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                                            View and share walk-in job opportunities easily.
-                                            Job seekers get listings; users can contribute drives.
-                                            Built with React, using Firebase or Supabase for backend services.</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="https://raw.githack.com/pragadeesh47/linkedin-ui-clone/refs/heads/main/index.html"
-                                id="linkedin-ui-link" target="_blank">
-                                <div class="flex flex-col gap-3 pb-3" style="cursor: pointer;">
-                                    <div>
-                                        <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                                            style="object-fit: cover;" src="./linkedin-ui-clone.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <p class="text-white text-base font-medium leading-normal">LinkedIn UI Clone
-                                            <span>
-                                                <img class="deploy-tooltip" id="linkedin-ui" src="./tick.png" alt="">
-                                            </span>
-                                        </p>
-                                        <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                                            Built a LinkedIn-inspired interface for desktop screens.
-                                            Created with HTML and CSS, without any interactivity.
-                                            Focused on layout accuracy and clean design. </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-3 p-4">
-                            <a href="" class="disabled-link" style="cursor: pointer;">
-                                <div class="flex flex-col gap-3 pb-3 " style="cursor: pointer;">
-                                    <div>
-                                        <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                                            style="object-fit: cover;" src="./e-learning.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <p class="text-white text-base font-medium leading-normal">E Learning <span>
-                                                <img class="deploy-tooltip" src="./close.png" alt="">
-                                            </span></p>
-                                        <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                                            Complete E-Learning app with admin, trainer, and customer modules.
-                                            Customers can browse courses, make payments, and enroll; trainers manage
-                                            course
-                                            content.
-                                            Built using React, PHP, and MySQL for a robust learning system.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="disabled-link" style="cursor: pointer;">
-                                <div class="flex flex-col gap-2 pb-3 " style="cursor: pointer;">
-                                    <div>
-                                        <img class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                                            style="object-fit: cover;" src="./pos.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <p class="text-white text-base font-medium leading-normal">Shop Management
-                                            System
-                                            <span> <img class="deploy-tooltip" src="./close.png" alt="">
-                                            </span>
-                                        </p>
-                                        <p class="text-[#a2abb3] text-sm font-normal leading-normal">
-                                            Developed a web-based solution for managing mobile shop activities.
-                                            Supports inventory tracking, customer records, recharge history, credits,
-                                            orders, and expenses.
-                                            Tech stack: HTML, CSS, JavaScript, AJAX, jQuery, PHP, and MySQL.</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <!-- <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience</h2>
-            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
-              <div class="flex flex-col items-center gap-1 pt-3">
-                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="w-[1.5px] bg-[#40474f] h-2 grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col py-3">
-                <p class="text-white text-base font-medium leading-normal">Senior Software Developer at Innovate Solutions</p>
-                <p class="text-[#a2abb3] text-base font-normal leading-normal">2018 - Present</p>
-              </div>
-              <div class="flex flex-col items-center gap-1 pb-3">
-                <div class="w-[1.5px] bg-[#40474f] h-2"></div>
-                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col py-3">
-                <p class="text-white text-base font-medium leading-normal">Junior Software Developer at TechStart</p>
-                <p class="text-[#a2abb3] text-base font-normal leading-normal">2016 - 2018</p>
-              </div>
-            </div> -->
-
-                        <h2 id="contact"
-                            class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                            Social
-                            Media</h2>
-                        <div class="@container">
-                            <div class="gap-2 px-4 flex flex-wrap justify-start">
-                                <a href="https://www.linkedin.com/in/pragadeeshwaran-developer" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="LinkedinLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">LinkedIn</p>
-                                    </div>
-                                </a>
-                                <a href="https://x.com/pragadeesh471" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="TwitterLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">Twitter</p>
-                                    </div>
-                                </a>
-                                <a href="https://github.com/pragadeesh47" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="GithubLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">GitHub</p>
-                                    </div>
-                                </a>
-                                <a href="https://www.instagram.com/pragadeesh._" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="InstagramLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152Zm40-88a8,8,0,1,1-8-8A8,8,0,0,1,168,64Zm56-8V200a48.05,48.05,0,0,1-48,48H80a48.05,48.05,0,0,1-48-48V56A48.05,48.05,0,0,1,80,8h96A48.05,48.05,0,0,1,224,56Zm-16,0a32,32,0,0,0-32-32H80A32,32,0,0,0,48,56V200a32,32,0,0,0,32,32h96a32,32,0,0,0,32-32Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">Instagram</p>
-                                    </div>
-                                </a>
-                                <a href="mailto:pragadeeshwaran471@gmail.com" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="InstagramLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M224,56V200a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V56a16,16,0,0,1,16-16H208A16,16,0,0,1,224,56Zm-32,0H64l64,48Zm16,16-64,48a16,16,0,0,1-19.2,0L48,72V200H208Z" />
-                                                </svg>
-
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">Mail</p>
-                                    </div>
-                                </a>
-                                <a href="tel:+919150209025" target="_blank">
-                                    <div class="flex flex-col items-center gap-2 bg-[#121416] py-2.5 text-center w-20">
-                                        <div class="rounded-full bg-[#2c3035] p-2.5">
-                                            <div class="text-white" data-icon="InstagramLogo" data-size="20px"
-                                                data-weight="regular">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
-                                                    fill="currentColor" viewBox="0 0 256 256">
-                                                    <path
-                                                        d="M222.37,158.46l-48-24a16,16,0,0,0-17.23,2.89l-21.41,21.41A176.19,176.19,0,0,1,97.23,120.27l21.41-21.41a16,16,0,0,0,2.89-17.23l-24-48A16,16,0,0,0,80,24H48A16,16,0,0,0,32,40C32,149.93,106.07,224,216,224a16,16,0,0,0,16-16V176A16,16,0,0,0,222.37,158.46Z" />
-                                                </svg>
-
-                                            </div>
-                                        </div>
-                                        <p class="text-white text-sm font-medium leading-normal">Phone</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer class="bg-[#121416] text-center py-4 text-white">Code. Create. Innovate.</footer>
-        </div>
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__mark grad-text">PV</div>
+      <div class="loader__bar"><span></span></div>
     </div>
 
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+    <canvas class="bg-canvas" id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="mouse-glow" id="mouse-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 
-    <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            const img = document.getElementById('linkedin-ui');
-            const linkedinLink = document.getElementById("linkedin-ui-link");
-            const screenWidth = window.innerWidth;
-            if (screenWidth >= 1024) {
-                img.src = './tick.png';
-                if (linkedinLink.classList.contains("disabled-link")) {
-                    linkedinLink.classList.remove("disabled-link");
-                }
-            } else {
-                img.src = './close.png';
-                if (!linkedinLink.classList.contains("disabled-link")) {
-                    linkedinLink.classList.add("disabled-link");
-                }
-            }
-        })
-    </script>
-</body>
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+      <nav class="nav__inner" aria-label="Primary">
+        <a class="brand" href="#hero" aria-label="Pragadeeshwaran V — home">
+          <span class="brand__dot" aria-hidden="true">PV</span>
+          <span>Pragadeeshwaran</span>
+        </a>
 
+        <div class="nav__links">
+          <a href="#about" data-nav-link>About</a>
+          <a href="#skills" data-nav-link>Skills</a>
+          <a href="#experience" data-nav-link>Experience</a>
+          <a href="#projects" data-nav-link>Projects</a>
+          <a href="#freelance" data-nav-link>Freelance</a>
+          <a href="#expertise" data-nav-link>Expertise</a>
+          <a href="#education" data-nav-link>Education</a>
+          <a href="#contact" data-nav-link>Contact</a>
+        </div>
+
+        <div class="nav__actions">
+          <button
+            class="icon-btn theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle dark and light theme"
+          >
+            <svg
+              class="moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg
+              class="sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              />
+            </svg>
+          </button>
+          <a class="btn btn--primary btn--sm" href="#contact">Hire Me</a>
+          <button
+            class="icon-btn nav__burger"
+            id="burger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mobile-menu glass" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#freelance">Freelance</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="page-enter">
+              <span class="status-pill"
+                ><span class="status-dot" aria-hidden="true"></span> Available for full-time roles · Open to
+                relocation</span
+              >
+
+              <h1>
+                Hi, I'm <span class="grad-text">Pragadeeshwaran</span>.<br />I build enterprise software that scales.
+              </h1>
+
+              <p
+                class="hero__typed"
+                id="typed"
+                data-words="Full Stack Developer|.NET Core Developer|Angular Developer|API &amp; Microservices Engineer"
+                aria-label="Full Stack Developer, .NET Core Developer, Angular Developer"
+              >
+                <span class="typed-text"></span><span class="caret" aria-hidden="true"></span>
+              </p>
+
+              <p class="hero__summary">
+                Three years shipping production features for global enterprise SaaS products at
+                <strong>Virtusa</strong> — delivering Angular front ends and ASP.NET Core microservices for
+                <strong>Brightly Software (a Siemens company)</strong> and <strong>HealthStream</strong>. I care about
+                clean architecture, secure APIs, accessible UI, and code that the next engineer will thank me for.
+              </p>
+
+              <div class="hero__meta">
+                <span class="meta-chip">⚡ <strong>3+ yrs</strong> experience</span>
+                <span class="meta-chip">📍 <strong>Chennai, India</strong> · Global</span>
+                <span class="meta-chip">🧩 <strong>.NET Core</strong> · Angular · SQL Server</span>
+                <span class="meta-chip">🟢 <strong>Immediate</strong> availability</span>
+              </div>
+
+              <div class="hero__cta">
+                <a class="btn btn--primary" href="#contact">Hire Me</a>
+                <a class="btn btn--ghost" href="resume/Pragadeeshwaran-V-Resume.pdf" download>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" />
+                  </svg>
+                  Download Resume
+                </a>
+                <a class="btn btn--outline" href="mailto:pragadeeshwaran471@gmail.com">Contact</a>
+              </div>
+            </div>
+
+            <div class="hero__visual">
+              <figure class="portrait">
+                <img
+                  src="images/profile.jpg"
+                  alt="Portrait placeholder of Pragadeeshwaran V, Full Stack Developer"
+                  width="800"
+                  height="800"
+                  fetchpriority="high"
+                />
+              </figure>
+              <div class="float-card float-card--a"><span class="k">3+</span> Years shipping</div>
+              <div class="float-card float-card--b"><span class="k">Siemens</span> · Brightly client</div>
+              <div class="float-card float-card--c"><span class="k">WCAG</span> Accessible UI</div>
+            </div>
+          </div>
+
+          <div class="scroll-indicator" aria-hidden="true">
+            <span class="mouse"></span>
+            Scroll
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section section--tint" id="about">
+        <div class="container">
+          <div class="about__grid">
+            <div data-reveal="left">
+              <span class="eyebrow">About me</span>
+              <h2>Engineering for enterprises, obsessing over the details.</h2>
+              <div class="prose" style="margin-top:1.1rem">
+                <p>
+                  I'm a Full Stack Developer based in Chennai, India, with three years of hands-on experience building
+                  enterprise web applications end to end — Angular and React on the front, ASP.NET Core and C#
+                  microservices on the back, SQL Server underneath.
+                </p>
+                <p>
+                  My journey started with a Bachelor of Engineering at VSB Engineering College and an internship where I
+                  shipped my first production features. Since December 2023 I've been a Software Engineer at Virtusa,
+                  working directly on products for Brightly Software (a Siemens company) and HealthStream — platforms
+                  used daily by international enterprise customers in facilities management and US healthcare.
+                </p>
+                <p>
+                  What I bring to a team: reusable component libraries that speed everyone up, REST and GraphQL APIs
+                  built for high volume, JWT/RBAC security done properly, WCAG-aligned interfaces, and a CI/CD +
+                  SonarQube habit that keeps quality visible. My goal is simple — grow into a senior full stack engineer
+                  who owns architecture decisions on mission-critical products.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-grid" data-stagger data-reveal="right">
+              <article class="pillar">
+                <div class="ico" aria-hidden="true">🏗️</div>
+                <h3>Architecture first</h3>
+                <p>Microservices, clean layering, and SOLID principles applied to real enterprise codebases.</p>
+              </article>
+              <article class="pillar">
+                <div class="ico" aria-hidden="true">🔐</div>
+                <h3>Security minded</h3>
+                <p>JWT authentication and role-based access control across multi-tenant SaaS workflows.</p>
+              </article>
+              <article class="pillar">
+                <div class="ico" aria-hidden="true">♿</div>
+                <h3>Accessible by default</h3>
+                <p>Interfaces built to WCAG standards so enterprise customers can onboard everyone.</p>
+              </article>
+              <article class="pillar">
+                <div class="ico" aria-hidden="true">🤝</div>
+                <h3>Agile collaborator</h3>
+                <p>Daily Scrum with distributed international teams, code reviews, and retrospectives.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="eyebrow">Skills</span>
+            <h2>A full stack toolkit, proven in production</h2>
+            <p>Every skill below is one I've used to ship features on live enterprise SaaS products.</p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card" data-reveal="zoom">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">🎨</span>
+                <div>
+                  <h3>Frontend</h3>
+                  <span>Angular · React · TypeScript</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Angular</span><b>92%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="92"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>TypeScript / JavaScript</span><b>90%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="90"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>React.js</span><b>80%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="80"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive UI</span
+                ><span class="tag">Micro frontends</span><span class="tag">WCAG</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom" data-delay="80">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">⚙️</span>
+                <div>
+                  <h3>Backend</h3>
+                  <span>ASP.NET Core · C#</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>ASP.NET Core / Web API</span><b>93%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="93"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>C#</span><b>92%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="92"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>REST &amp; GraphQL APIs</span><b>88%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="88"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Microservices</span><span class="tag">Entity Framework</span
+                ><span class="tag">LINQ</span><span class="tag">Unit Testing</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom" data-delay="160">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">🗄️</span>
+                <div>
+                  <h3>Database</h3>
+                  <span>SQL Server · MySQL</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>SQL Server</span><b>90%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="90"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Query &amp; procedure tuning</span><b>85%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="85"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>MySQL / NoSQL</span><b>75%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="75"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Stored procedures</span><span class="tag">Indexing</span
+                ><span class="tag">Data modelling</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">☁️</span>
+                <div>
+                  <h3>Cloud</h3>
+                  <span>Azure · AWS exposure</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Microsoft Azure</span><b>65%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="65"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>AWS</span><b>55%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="55"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">App deployment</span><span class="tag">Cloud-hosted SaaS</span
+                ><span class="tag">Actively upskilling</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom" data-delay="80">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">🚀</span>
+                <div>
+                  <h3>DevOps</h3>
+                  <span>Jenkins · SonarQube</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Jenkins CI/CD</span><b>82%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="82"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>SonarQube quality gates</span><b>85%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="85"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Git / GitHub workflows</span><b>90%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="90"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Automated builds</span><span class="tag">Static analysis</span
+                ><span class="tag">Branching strategy</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom" data-delay="160">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">🧱</span>
+                <div>
+                  <h3>Architecture</h3>
+                  <span>Scalable web systems</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Microservices design</span><b>84%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="84"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Reusable component libraries</span><b>90%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="90"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Auth &amp; RBAC design</span><b>88%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="88"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">SOLID</span><span class="tag">Clean architecture</span
+                ><span class="tag">Design patterns</span>
+              </div>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">🧰</span>
+                <div>
+                  <h3>Tools</h3>
+                  <span>Daily drivers</span>
+                </div>
+              </div>
+              <div class="tag-row" style="margin-bottom:.9rem">
+                <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Jenkins</span
+                ><span class="tag">SonarQube</span><span class="tag">Visual Studio</span><span class="tag">VS Code</span
+                ><span class="tag">SSMS</span><span class="tag">Postman</span><span class="tag">Jira</span
+                ><span class="tag">Swagger</span>
+              </div>
+              <p style="color:var(--muted);font-size:.88rem">
+                Tooling that keeps delivery fast, reviewable, and measurable across distributed teams.
+              </p>
+            </article>
+
+            <article class="skill-card" data-reveal="zoom" data-delay="80">
+              <div class="skill-card__head">
+                <span class="skill-card__ico" aria-hidden="true">💬</span>
+                <div>
+                  <h3>Soft skills</h3>
+                  <span>How I work with people</span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Communication &amp; code reviews</span><b>92%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="92"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__label"><span>Ownership &amp; problem solving</span><b>94%</b></div>
+                <div class="bar__track"><div class="bar__fill" data-value="94"></div></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Agile / Scrum</span><span class="tag">Cross-timezone teams</span
+                ><span class="tag">Mentoring peers</span><span class="tag">English · Tamil</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section section--tint" id="experience">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Experience</span>
+            <h2>Three years inside enterprise product teams</h2>
+            <p>Delivering for international clients through Virtusa's global engineering organisation.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="tl-item" data-reveal="right">
+              <div class="tl-card">
+                <div class="tl-card__top">
+                  <div>
+                    <h3>Software Engineer — Full Stack</h3>
+                    <span class="tl-company">Virtusa · Clients: Brightly Software (Siemens), HealthStream</span>
+                  </div>
+                  <span class="tl-period">Dec 2023 — Present</span>
+                </div>
+                <ul>
+                  <li>
+                    Build and maintain enterprise modules across Brightly's Event Manager and Asset Management products
+                    and HealthStream's Credential Management platform using Angular and ASP.NET Core.
+                  </li>
+                  <li>
+                    Design reusable Angular components and shared UI libraries that accelerate feature delivery across
+                    multiple teams.
+                  </li>
+                  <li>Develop and consume REST and GraphQL APIs supporting high-volume enterprise workflows.</li>
+                  <li>
+                    Contribute to a microservices-based backend in ASP.NET Core and C#, including secure JWT
+                    authentication and role-based access control.
+                  </li>
+                  <li>
+                    Ship WCAG-aligned interfaces and write optimised SQL Server queries and stored procedures for
+                    performance-critical modules.
+                  </li>
+                  <li>Maintain Jenkins CI/CD pipelines and raise code quality through SonarQube static analysis.</li>
+                  <li>
+                    Collaborate in Agile Scrum ceremonies — planning, stand-ups, reviews, retrospectives — with
+                    distributed international teams.
+                  </li>
+                </ul>
+                <div class="tag-row">
+                  <span class="tag">Angular</span><span class="tag">ASP.NET Core</span><span class="tag">C#</span
+                  ><span class="tag">GraphQL</span><span class="tag">SQL Server</span><span class="tag">JWT / RBAC</span
+                  ><span class="tag">Jenkins</span><span class="tag">SonarQube</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="tl-item" data-reveal="right" data-delay="90">
+              <div class="tl-card">
+                <div class="tl-card__top">
+                  <div>
+                    <h3>Software Development Intern</h3>
+                    <span class="tl-company">Cappricio Securities</span>
+                  </div>
+                  <span class="tl-period">Jun 2023 — Aug 2023</span>
+                </div>
+                <ul>
+                  <li>Developed web application features using React.js and PHP.</li>
+                  <li>Assisted with REST API integration and database development.</li>
+                  <li>Participated in debugging, testing, and deployment activities.</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="tag">React.js</span><span class="tag">PHP</span><span class="tag">REST APIs</span
+                  ><span class="tag">MySQL</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Projects</span>
+            <h2>Enterprise products I've helped build</h2>
+            <p>
+              Real client work delivered through Virtusa. Source code is proprietary — happy to walk through the
+              architecture in an interview.
+            </p>
+          </div>
+
+          <div class="filter-row" data-reveal>
+            <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="angular">Angular</button>
+            <button class="filter-btn" type="button" data-filter="react">React</button>
+            <button class="filter-btn" type="button" data-filter="dotnet">.NET Core</button>
+            <button class="filter-btn" type="button" data-filter="cloudsaas">Enterprise SaaS</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-tags="angular dotnet cloudsaas" data-reveal="zoom">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-event-manager.jpg"
+                data-lightbox-alt="Event Manager platform interface preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open Event Manager preview"
+              >
+                <span class="project-card__badge">Brightly / Siemens</span>
+                <img
+                  src="images/project-event-manager.jpg"
+                  alt="Event Manager enterprise platform interface preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Event Manager — Enterprise Event Management</h3>
+                <p>
+                  A platform that lets large organisations plan, schedule, and run operational events at scale across
+                  facilities and teams.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">Angular</span><span class="tag">TypeScript</span
+                    ><span class="tag">ASP.NET Core</span><span class="tag">GraphQL</span
+                    ><span class="tag">SQL Server</span><span class="tag">JWT / RBAC</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Built reusable Angular components, developed ASP.NET Core backend microservices, implemented
+                    JWT/RBAC authentication, and ensured WCAG-compliant UI.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Challenge → solution</div>
+                  <p>
+                    Feature duplication across squads slowed delivery — a shared component library plus consistent API
+                    contracts kept modules aligned and maintainable.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Outcome</div>
+                  <p>A stable, accessible enterprise product serving international Brightly / Siemens customers.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="angular dotnet cloudsaas" data-reveal="zoom" data-delay="90">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-asset-management.jpg"
+                data-lightbox-alt="Asset Management software interface preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open Asset Management preview"
+              >
+                <span class="project-card__badge">Brightly / Siemens</span>
+                <img
+                  src="images/project-asset-management.jpg"
+                  alt="Asset Management software interface preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Asset Management Software</h3>
+                <p>
+                  Enterprise SaaS that helps organisations track, maintain, and optimise physical assets across
+                  facilities.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">Angular</span><span class="tag">ASP.NET Core</span
+                    ><span class="tag">Microservices</span><span class="tag">REST</span
+                    ><span class="tag">SQL Server</span><span class="tag">Jenkins</span
+                    ><span class="tag">SonarQube</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Developed feature modules across frontend and backend, wrote optimised SQL Server queries,
+                    integrated CI/CD pipelines, and upheld quality through code reviews.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Challenge → solution</div>
+                  <p>
+                    Performance-critical asset queries strained reporting screens — targeted query and stored-procedure
+                    tuning kept data-heavy views responsive.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Outcome</div>
+                  <p>
+                    Reliable, production-ready features for an enterprise-grade Siemens/Brightly product used worldwide.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="react dotnet cloudsaas" data-reveal="zoom" data-delay="180">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-credentialing.jpg"
+                data-lightbox-alt="Credential management platform interface preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open Credentialing preview"
+              >
+                <span class="project-card__badge">HealthStream</span>
+                <img
+                  src="images/project-credentialing.jpg"
+                  alt="Credential management platform interface preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Credentialing — Credential Management Platform</h3>
+                <p>
+                  A centralised platform for US healthcare organisations to manage workforce credentials, licences,
+                  certifications, and compliance.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">React.js</span><span class="tag">JavaScript</span
+                    ><span class="tag">ASP.NET Core</span><span class="tag">REST APIs</span
+                    ><span class="tag">MySQL</span><span class="tag">JWT / RBAC</span><span class="tag">Jenkins</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Built frontend modules and backend services for credential tracking, compliance workflows, and user
+                    access management.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Challenge → solution</div>
+                  <p>
+                    Compliance data demands strict access boundaries — role-based access control and JWT-secured
+                    services kept sensitive records scoped to the right users.
+                  </p>
+                </div>
+                <div>
+                  <div class="mini-head">Outcome</div>
+                  <p>Healthcare clients streamlined the full workforce compliance and certification lifecycle.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FREELANCE PROJECTS ============ -->
+      <section class="section section--tint" id="freelance">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Freelance</span>
+            <h2>Freelance &amp; independent builds</h2>
+            <p>Client and self-driven products shipped end to end — design, frontend, backend and deployment.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-reveal="zoom">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-blog.jpg"
+                data-lightbox-alt="Cybersecurity blog platform preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open blog platform preview"
+              >
+                <span class="project-card__badge">Freelance</span>
+                <img
+                  src="images/project-blog.jpg"
+                  alt="Cybersecurity blog platform interface preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Blogs — Cappricio Securities</h3>
+                <p>
+                  A content platform publishing cybersecurity research, CVE write-ups, tools and hardware articles for a
+                  security community audience.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span
+                    ><span class="tag">Responsive UI</span><span class="tag">SEO</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Built the full site — category structure, article templates, responsive layout and performance/SEO
+                    tuning.
+                  </p>
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--outline btn--sm"
+                    href="https://blogs.cappriciosec.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal="zoom" data-delay="90">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-courses-landing.jpg"
+                data-lightbox-alt="Online courses landing page preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open courses landing page preview"
+              >
+                <span class="project-card__badge">Freelance</span>
+                <img
+                  src="images/project-courses-landing.jpg"
+                  alt="Online cybersecurity courses landing page preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Cappriciosec University — Course Landing Page</h3>
+                <p>
+                  A conversion-focused landing site for cybersecurity, hacking and tech courses taught in Tamil, with
+                  course pages and enrolment call-to-actions.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span
+                    ><span class="tag">Responsive UI</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Designed and developed the landing experience, individual course pages, and mobile-first responsive
+                    layouts.
+                  </p>
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--outline btn--sm"
+                    href="https://university.cappriciosec.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal="zoom" data-delay="180">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-elearning.jpg"
+                data-lightbox-alt="E-learning portal preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open e-learning portal preview"
+              >
+                <span class="project-card__badge">Freelance</span>
+                <img
+                  src="images/project-elearning.jpg"
+                  alt="E-learning portal dashboard preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>E-Learning Portal</h3>
+                <p>
+                  A learning portal where students access course content and track progress, with an admin side for
+                  managing courses and users.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">React.js</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Developed the React frontend, PHP APIs and MySQL schema covering course delivery, enrolment and
+                    role-based access.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal="zoom" data-delay="270">
+              <div
+                class="project-card__media"
+                data-lightbox="images/project-shop-management.jpg"
+                data-lightbox-alt="Shop management system preview"
+                role="button"
+                tabindex="0"
+                aria-label="Open shop management system preview"
+              >
+                <span class="project-card__badge">Freelance</span>
+                <img
+                  src="images/project-shop-management.jpg"
+                  alt="Shop management system dashboard preview"
+                  loading="lazy"
+                  width="1200"
+                  height="750"
+                />
+              </div>
+              <div class="project-card__body">
+                <h3>Shop Management System</h3>
+                <p>
+                  A retail management tool handling inventory, billing, customers and sales reporting for a small
+                  business.
+                </p>
+                <div>
+                  <div class="mini-head">Tech stack</div>
+                  <div class="tag-row">
+                    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span
+                    ><span class="tag">AJAX</span><span class="tag">jQuery</span><span class="tag">PHP</span
+                    ><span class="tag">MySQL</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="mini-head">My contribution</div>
+                  <p>
+                    Built the complete system — AJAX-driven billing and stock screens, PHP backend logic and MySQL
+                    reporting queries.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TECHNICAL EXPERTISE ============ -->
+      <section class="section section--tint" id="expertise">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="eyebrow">Technical expertise</span>
+            <h2>The stack I reach for</h2>
+            <p>Core technologies and principles behind the products I ship.</p>
+          </div>
+
+          <div class="expertise-grid" data-stagger data-reveal>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🌐</span>
+              <h3>ASP.NET Core</h3>
+              <p>Enterprise Web APIs and services</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">#️⃣</span>
+              <h3>C#</h3>
+              <p>Primary backend language</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🅰️</span>
+              <h3>Angular</h3>
+              <p>Component libraries &amp; SPAs</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🗃️</span>
+              <h3>SQL Server</h3>
+              <p>Optimised queries &amp; procedures</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🔗</span>
+              <h3>Entity Framework</h3>
+              <p>Data access &amp; migrations</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🔎</span>
+              <h3>LINQ</h3>
+              <p>Expressive typed querying</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🔁</span>
+              <h3>REST API</h3>
+              <p>Versioned, documented contracts</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🔑</span>
+              <h3>JWT Authentication</h3>
+              <p>Token-based secure access</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🧩</span>
+              <h3>Microservices</h3>
+              <p>Decoupled backend services</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">☁️</span>
+              <h3>Azure</h3>
+              <p>Cloud-hosted enterprise apps</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🐳</span>
+              <h3>Docker</h3>
+              <p>Containerised environments</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🌿</span>
+              <h3>Git</h3>
+              <p>Reviewed, traceable delivery</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🏛️</span>
+              <h3>Clean Architecture</h3>
+              <p>Boundaries that survive change</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">📐</span>
+              <h3>SOLID Principles</h3>
+              <p>Maintainable object design</p>
+            </article>
+            <article class="exp-card">
+              <span class="ico" aria-hidden="true">🧠</span>
+              <h3>Design Patterns</h3>
+              <p>Proven solutions, applied well</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Education</span>
+            <h2>Foundations</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="tl-item" data-reveal="right">
+              <div class="tl-card">
+                <div class="tl-card__top">
+                  <div>
+                    <h3>Bachelor of Engineering</h3>
+                    <span class="tl-company">VSB Engineering College</span>
+                  </div>
+                  <span class="tl-period">Graduated 2023</span>
+                </div>
+                <p style="color:var(--muted);margin-top:.65rem;font-size:.93rem">
+                  Engineering fundamentals in programming, data structures, databases, and software engineering — the
+                  base I built a full stack career on.
+                </p>
+              </div>
+            </article>
+            <article class="tl-item" data-reveal="right" data-delay="90">
+              <div class="tl-card">
+                <div class="tl-card__top">
+                  <div>
+                    <h3>Software Development Internship</h3>
+                    <span class="tl-company">Cappricio Securities</span>
+                  </div>
+                  <span class="tl-period">2023</span>
+                </div>
+                <p style="color:var(--muted);margin-top:.65rem;font-size:.93rem">
+                  First professional exposure to React.js, PHP, REST API integration, and the full debug–test–deploy
+                  cycle.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATIONS ============ -->
+      <section class="section section--tint" id="certifications">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Certifications &amp; credentials</span>
+            <h2>Continuous learning</h2>
+            <p>Professional development and workplace credentials earned alongside delivery work.</p>
+          </div>
+
+          <div class="card-grid" data-stagger data-reveal>
+            <article class="info-card">
+              <span class="badge">Enterprise training</span>
+              <h3>Virtusa Full Stack Engineering Program</h3>
+              <p>
+                Structured onboarding and continuous training in .NET Core, Angular, and enterprise delivery practices.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="badge">Practice</span>
+              <h3>Agile &amp; Scrum Delivery</h3>
+              <p>
+                Working certification through daily practice: sprint planning, reviews, retrospectives, and code review
+                culture.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="badge">Quality</span>
+              <h3>Code Quality with SonarQube</h3>
+              <p>
+                Hands-on ownership of static analysis, quality gates, and maintainability metrics on client codebases.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="badge">Languages</span>
+              <h3>English &amp; Tamil</h3>
+              <p>
+                English at professional working proficiency; Tamil native. Comfortable in distributed, cross-timezone
+                teams.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ACHIEVEMENTS ============ -->
+      <section class="section" id="achievements">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="eyebrow">By the numbers</span>
+            <h2>Impact at a glance</h2>
+          </div>
+
+          <div class="counter-grid" data-reveal>
+            <div class="counter">
+              <div class="counter__num" data-target="3" data-suffix="+">0</div>
+              <div class="counter__label">Years of experience</div>
+            </div>
+            <div class="counter">
+              <div class="counter__num" data-target="3" data-suffix="">0</div>
+              <div class="counter__label">Enterprise products delivered</div>
+            </div>
+            <div class="counter">
+              <div class="counter__num" data-target="40" data-suffix="+">0</div>
+              <div class="counter__label">APIs built &amp; integrated</div>
+            </div>
+            <div class="counter">
+              <div class="counter__num" data-target="20" data-suffix="+">0</div>
+              <div class="counter__label">Technologies used</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section--tint" id="contact">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build something reliable together</h2>
+            <p>
+              Open to full-time Full Stack Developer roles worldwide — on-site, hybrid, or relocation. I reply within a
+              day.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div data-reveal="left">
+              <div class="contact-list">
+                <a class="contact-row" href="mailto:pragadeeshwaran471@gmail.com">
+                  <span class="ico" aria-hidden="true">✉️</span>
+                  <span><small>Email</small><strong>pragadeeshwaran471@gmail.com</strong></span>
+                </a>
+                <a class="contact-row" href="tel:+919150209025">
+                  <span class="ico" aria-hidden="true">📞</span>
+                  <span><small>Phone</small><strong>+91 91502 09025</strong></span>
+                </a>
+                <a
+                  class="contact-row"
+                  href="https://linkedin.com/in/pragadeeshwaran-developer"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="ico" aria-hidden="true">in</span>
+                  <span><small>LinkedIn</small><strong>/in/pragadeeshwaran-developer</strong></span>
+                </a>
+                <a class="contact-row" href="https://github.com/pragadeesh47" target="_blank" rel="noopener">
+                  <span class="ico" aria-hidden="true">🐙</span>
+                  <span><small>GitHub</small><strong>github.com/pragadeesh47</strong></span>
+                </a>
+              </div>
+              <div class="map-frame" role="img" aria-label="Map placeholder showing Chennai, Tamil Nadu, India">
+                <span
+                  >📍 Chennai, Tamil Nadu, India<br /><small style="color:var(--muted);font-weight:500"
+                    >Map placeholder — open to relocation</small
+                  ></span
+                >
+              </div>
+            </div>
+
+            <!-- <form class="form" id="contact-form" novalidate data-reveal="right">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Recruiter" />
+                <span class="error" data-error="name" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" />
+                <span class="error" data-error="email" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Full Stack Developer opportunity" />
+                <span class="error" data-error="subject" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about the role, team, and stack…"></textarea>
+                <span class="error" data-error="message" role="alert"></span>
+              </div>
+              <button class="btn btn--primary" type="submit">Send message</button>
+              <p class="form__status" id="form-status" role="status"></p>
+            </form> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <a class="brand" href="#hero">
+            <span class="brand__dot" aria-hidden="true">PV</span>
+            <span>Pragadeeshwaran V</span>
+          </a>
+          <nav class="footer__nav" aria-label="Footer">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#freelance">Freelance</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="socials">
+            <a
+              class="icon-btn"
+              href="https://linkedin.com/in/pragadeeshwaran-developer"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn profile"
+              >in</a
+            >
+            <a
+              class="icon-btn"
+              href="https://github.com/pragadeesh47"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub profile"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.47.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.58.23 2.75.12 3.04.74.82 1.18 1.85 1.18 3.11 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"
+                />
+              </svg>
+            </a>
+            <a class="icon-btn" href="mailto:pragadeeshwaran471@gmail.com" aria-label="Send an email">✉️</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Pragadeeshwaran V. Built for Finding Jobs.</span>
+          <span>Chennai, India · Open to relocation worldwide</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="icon-btn to-top" id="to-top" type="button" aria-label="Back to top">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        aria-hidden="true"
+      >
+        <path d="M12 20V5m0 0-6 6m6-6 6 6" />
+      </svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image preview">
+      <button class="icon-btn lightbox__close" id="lightbox-close" type="button" aria-label="Close preview">✕</button>
+      <img src="" alt="" />
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/particles.js" defer></script>
+  </body>
 </html>

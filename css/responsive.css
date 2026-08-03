@@ -1,0 +1,123 @@
+/* =========================================================
+   responsive.css : mobile-first refinements
+   Base styles are authored mobile-friendly; these blocks
+   collapse the multi-column desktop layouts.
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .hero__grid,
+  .about__grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .float-card--a {
+    left: 0;
+  }
+
+  .float-card--b {
+    right: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  :root {
+    --nav-h: 64px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__burger {
+    display: grid;
+  }
+
+  .cursor-dot,
+  .cursor-ring,
+  .mouse-glow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .container,
+  .nav__inner {
+    width: min(100% - 2rem, var(--container));
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__cta .btn {
+    flex: 1 1 auto;
+  }
+
+  .float-card--c {
+    display: none;
+  }
+
+  .timeline {
+    padding-left: 1.75rem;
+  }
+
+  .tl-item::before {
+    left: -1.75rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline::before {
+    left: 7px;
+  }
+
+  .footer__grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .expertise-grid,
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .nav,
+  .to-top,
+  .bg-orbs,
+  .bg-canvas,
+  .loader,
+  .scroll-progress {
+    display: none !important;
+  }
+}
